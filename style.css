@@ -1,0 +1,36 @@
+p, td, th{
+    font-size: 1em
+}
+.container{
+    position: relative;
+    margin: 5% 20%;
+    padding: 5% 5%;
+    background-color: rgba(255, 255, 235, 0.664);
+}
+.header{
+    line-height: 2px;
+}
+.cen{
+    text-align: center;
+}
+.jus{
+    text-align: justify;
+}
+.box{
+    width: 500px;
+}
+.left{
+    text-align: left;
+}
+hr{
+    height: 1px;
+    background-color: #5e85cc;
+    border: none;
+}
+.heading{
+    color: #547EC9;
+    font-family: 'Courier New', Courier, monospace;
+}
+.row{
+    display: inline-block;
+}
