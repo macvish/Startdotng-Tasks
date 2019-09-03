@@ -4,8 +4,9 @@
         <meta charset="utf-8">
         <title>Macanthony's Cv</title>
         <link rel="stylesheet" href="style.css">
+        <script src="./validateForm.js"></script>
     </head>
-    <body>
+    <body onload="init()">
         <div class="container">
             <div class="header">
                 <h2 class="cen">AHAOTU MACANTHONY CHIMA</h2>
@@ -140,7 +141,23 @@
             <h5 class="heading">HOBBIES</h5>
             <P>Playing Games, Surfing the Internet, Reading and Listening to music.</P>
             <br/><br/>
-            <img src="https://res.cloudinary.com/macovish/image/upload/c_scale,r_23,w_627/a_0/v1566536087/My%20pictures/20150101_135213_jkeycg.jpg" width="150px">
+            <div class="col">
+                <img src="https://res.cloudinary.com/macovish/image/upload/c_scale,r_23,w_627/a_0/v1566536087/My%20pictures/20150101_135213_jkeycg.jpg" width="150px">
+            </div>
+            <div class="col">
+                <form>
+                    <input type="text" id="name" placeholder="Name" pattern="[A-Za-z]{4,}" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="text" id="title" placeholder="Title" pattern="[A-Za-z]{4,}" required>
+                    <textarea type="text" id="mgs" placeholder="Message" pattern="[A-Za-z]{20,}" required></textarea>
+                    <input type="submit" id="btn" value="Send" onclick="validate()">
+                </form>
+            </div>
+            <div id="invalid">
+                <i id="info"></i>
+                <i id="info1"></i>
+                <i id="info2"></i>
+            </div>
         </div>
     </body>
 </html>

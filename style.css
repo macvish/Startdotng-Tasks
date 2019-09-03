@@ -5,7 +5,7 @@ p, td, th{
     position: relative;
     margin: 5% 20%;
     padding: 5% 5%;
-    background-color: rgba(255, 255, 235, 0.664);
+    background-color: rgba(255, 255, 235, 0.808);
 }
 .header{
     line-height: 2px;
@@ -33,4 +33,36 @@ hr{
 }
 .row{
     display: inline-block;
+}
+.col{
+    display: inline-block;
+    margin-left: 10%;
+}
+input, textarea{
+    display: block;
+    width: 300px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+}
+#invalid{
+    float: right;
+    width: 400px;
+    line-height: 20px;
+    text-align: center;
+    color: red;
+}
+#message{
+    height: 100px;
+}
+#btn{
+    width: 100px;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+}
+#btn:hover{
+    background-color: rgba(46, 144, 49, 0.835);
 }
